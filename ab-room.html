@@ -1165,7 +1165,18 @@
       color: var(--muted);
       font-size: 12px;
       line-height: 1.45;
-      text-align: center;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .privacy input {
+      width: 16px;
+      height: 16px;
+      margin-top: 1px;
+      accent-color: var(--green);
+      flex: 0 0 auto;
     }
 
     .plan-image {
@@ -1594,7 +1605,7 @@
           </select>
           <input class="field js-phone" type="tel" name="phone" value="+7 (" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
           <button class="btn js-goal" type="submit" data-goal="lead_form_submit">Получить расчёт</button>
-          <p class="privacy">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+          <label class="privacy"><input type="checkbox" name="personal_data_agree" required><span>Согласен на обработку персональных данных и принимаю <a href="privacy.html">политику конфиденциальности</a></span></label>
         </form>
       </div>
     </section>
@@ -1749,7 +1760,7 @@
             </select>
             <textarea class="field" name="comment" placeholder="Комментарий, если нужно"></textarea>
             <button class="btn" type="submit">Получить расчёт</button>
-            <p class="privacy">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            <label class="privacy"><input type="checkbox" name="personal_data_agree" required><span>Согласен на обработку персональных данных и принимаю <a href="privacy.html">политику конфиденциальности</a></span></label>
           </form>
           <div class="plan-image"><img src="img/room-premium.png" alt="Визуализация будущего балкона"></div>
         </div>
@@ -1797,7 +1808,7 @@
         </select>
         <textarea class="field" name="comment" placeholder="Комментарий, если нужно"></textarea>
         <button class="btn" type="submit">Получить расчёт</button>
-        <p class="privacy">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        <label class="privacy"><input type="checkbox" name="personal_data_agree" required><span>Согласен на обработку персональных данных и принимаю <a href="privacy.html">политику конфиденциальности</a></span></label>
       </form>
       <div class="success-message">
         <h2>Спасибо!</h2>
