@@ -1204,6 +1204,14 @@
       color: rgba(255, 255, 255, 0.62);
     }
 
+    .footer-legal {
+      display: grid;
+      gap: 4px;
+      font-size: 13px;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.62);
+    }
+
     .footer a:hover { color: var(--green); }
 
     .modal {
@@ -1751,7 +1759,13 @@
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div><a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5M7 11h10M8 15h8"/></svg></span><span class="brand-text"><strong>Балкон под ключ</strong><span>© 2026 · Краснодар</span></span></a></div>
+      <div>
+        <a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5M7 11h10M8 15h8"/></svg></span><span class="brand-text"><strong>Балкон под ключ</strong><span>© 2026 · Краснодар</span></span></a>
+        <div class="footer-legal">
+          <span>Индивидуальный предприниматель Романов Виталий Михайлович</span>
+          <span>ИНН 032386523363 · ОГРНИП 320032700032989 · email: Romanov.2023@yandex.ru</span>
+        </div>
+      </div>
       <div><button class="btn js-open-modal js-goal" type="button" data-interest="Бесплатный замер" data-goal="click_free_measure">Бесплатный замер</button><div style="margin-top:12px"><a href="privacy.html">Политика конфиденциальности</a></div></div>
     </div>
   </footer>
